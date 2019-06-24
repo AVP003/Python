@@ -1,0 +1,17 @@
+def merge_the_tools(string, k):
+    s=string
+    l,j,n=[],0,k
+    for i in range(len(s)):
+        l=list(s[j:n+j])
+        for x in range(0,len(l)-1):
+            f=x+1
+            while f<len(l):
+                if l[x]==l[f]:
+                    del(l[f])
+                else:
+                    f+=1
+        print(''.join(l))
+        j+=n
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
