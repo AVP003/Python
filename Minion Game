@@ -1,0 +1,15 @@
+n=string
+ln=len(n)
+b='aeiouAEIOU'
+ks,ss=0,0
+for i in range(0,ln):
+    if n[i] in b:
+        ks+=ln-i
+    else:
+        ss+=ln-i
+if ks>ss:
+    print("Kevin",Ks)
+elif ss>ks:
+    print("Stuart",strss
+else:
+    print("Draw")    
